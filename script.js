@@ -86,8 +86,13 @@ function selectionSort() {
             // Tukar nilai terkecil dengan elemen pertama atau elemen saat ini
             var temp = array[minIndex];
             array[minIndex] = array[i];
-            arraySorted[i] = temp;
+            array[i] = temp;
+
+
+            
         }
+
+        arraySorted = array.slice();
         document.getElementById("before").innerText ="sebelum:" + array;
         document.getElementById("after").innerText = "setelah:" +  arraySorted;
 
