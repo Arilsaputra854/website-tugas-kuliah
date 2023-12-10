@@ -93,7 +93,8 @@ function selectionSort() {
         }
 
         arraySorted = array.slice();
-        document.getElementById("before").innerText ="sebelum:" + array;
+        document.getElementById("before").innerText ="sebelum:" + 
+        JSON.parse(localStorage.getItem("dataarray"));
         document.getElementById("after").innerText = "setelah:" +  arraySorted;
 
     }
