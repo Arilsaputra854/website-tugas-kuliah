@@ -5,7 +5,7 @@ array = JSON.parse(localStorage.getItem("dataarray"));
 console.log("array: " + array);
 function operasiarray() {
     var input = document.getElementById("arrayInput").value;
-    if(input == ""){
+    if (input == "") {
         return
     }
     if (array == null) {
@@ -62,7 +62,7 @@ function binarySearch() {
 
 }
 
-function hapusArray(){
+function hapusArray() {
     document.getElementById("hasil").innerText = "Hasil:";
     return array = localStorage.removeItem("dataarray");
 }
@@ -89,13 +89,51 @@ function selectionSort() {
             array[i] = temp;
 
 
-            
+
         }
 
         arraySorted = array.slice();
-        document.getElementById("before").innerText ="sebelum:" + 
-        JSON.parse(localStorage.getItem("dataarray"));
-        document.getElementById("after").innerText = "setelah:" +  arraySorted;
+        document.getElementById("before").innerText = "sebelum:" +
+            JSON.parse(localStorage.getItem("dataarray"));
+        document.getElementById("after").innerText = "setelah:" + arraySorted;
 
     }
+}
+function mergeSort(array) {
+
+    array = JSON.parse(localStorage.getItem("dataarray"));
+    var sorted = array.slice(),
+        n = sorted.length,
+        buffer = new Array(n);
+
+    for (var size = 1; size < n; size *= 2) {
+        for (var leftStart = 0; leftStart < n; leftStart += 2 * size) {
+            var left = leftStart,
+                right = Math.min(left + size, n),
+                leftLimit = right,
+                rightLimit = Math.min(right + size, n),
+                i = left;
+            while (left < leftLimit && right < rightLimit) {
+                if (sorted[left] <= sorted[right]) {
+                    buffer[i++] = sorted[left++];
+                } else {
+                    buffer[i++] = sorted[right++];
+                }
+            }
+            while (left < leftLimit) {
+                buffer[i++] = sorted[left++];
+            }
+            while (right < rightLimit) {
+                buffer[i++] = sorted[right++];
+            }
+        }
+        var temp = sorted,
+            sorted = buffer,
+            buffer = temp;
+    }
+
+    document.getElementById("before").innerText = "sebelum:" +
+        JSON.parse(localStorage.getItem("dataarray"));
+    document.getElementById("after").innerText = "setelah:" + sorted;
+    return;
 }
