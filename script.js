@@ -166,3 +166,10 @@ function bagi(){
     if(num1 != null && num1 != "" && num2 != null && num2 != ""){
         document.getElementById("output").innerText = "Hasil:"+(num1/num2);    }
 }
+
+function hitungLuas(){
+    var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
+    if(num1 != null && num1 != "" && num2 != null && num2 != ""){
+        document.getElementById("output").innerText = "Hasil:"+(num1*num2);    }
+}
