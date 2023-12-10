@@ -137,3 +137,32 @@ function mergeSort(array) {
     document.getElementById("after").innerText = "setelah:" + sorted;
     return;
 }
+
+function tambah(){
+    var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
+    if(num1 != null && num1 != "" && num2 != null && num2 != ""){
+        document.getElementById("output").innerText = "Hasil:"+(num1+num2);    }
+}
+
+
+function kurang(){
+    var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
+    if(num1 != null && num1 != "" && num2 != null && num2 != ""){
+        document.getElementById("output").innerText = "Hasil:"+(num1-num2);    }
+}
+
+function kali(){
+    var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
+    if(num1 != null && num1 != "" && num2 != null && num2 != ""){
+        document.getElementById("output").innerText = "Hasil:"+(num1*num2);    }
+}
+
+function bagi(){
+    var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
+    if(num1 != null && num1 != "" && num2 != null && num2 != ""){
+        document.getElementById("output").innerText = "Hasil:"+(num1/num2);    }
+}
