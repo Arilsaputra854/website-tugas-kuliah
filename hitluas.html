@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Kalkulator Sederhana</title>
+    <title>Hitung Luas</title>
 </head>
+
 <body>
     <script src="script.js"></script>
-    <H1>HITUNG LUAS</H1>
-    <h3>Luas persegi Panjang</h3>
-    <br>
-    <label>Panjang:</label>
-    <input id="panjang" type="number">
-    <br>
-    <label>Lebar:</label>
-    <input id="lebar" type="number">
-    <br>
-    <button onclick="HitungLuas()">Hitung</button>
-    <br>
-    <h3 id="output">Hasil</h3>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="array.html">Array</a></li>
+                <li><a href="binary_search.html">Binary Search</a></li>
+                <li><a href="selection_sort.html">Selection Sort</a></li>
+                <li><a href="insertion_sort.html">Insertion Sort</a></li>
+                <li><a href="kalkulator.html">Kalkulator</a></li>
+                <li><a href="hitluas.html">Menghitung Luas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section-hitung-luas">
+            <h2>Hitung Luas</h2>
+            <ul id="listHitLuas">
+                <li id="submenu"><button onclick="hitPersegi()">Persegi Panjang</button></li>
+                <li id="submenu"><button onclick="hitSegitiga()">Segitiga</button></li>
+                <li id="submenu"><button onclick="hitLingkaran()">Lingkaran</button></li>
+            </ul>
+            <br>
+            <h3 id="rumus">Rumus: Luas(L) = panjang (p) x lebar (l) </h3>
+            <label id="title1">Panjang</label>
+            <input id="num1" type="number">
+            <br>
+            <label id="title2">Lebar</label>
+            <input id="num2" type="number">
+            <br>
+            <button onclick="HitungLuas()">Hitung</button>
+            <br>
+            <h3 id="output"></h3>
+        </section>
+    </main>
 </body>
+
 </html>

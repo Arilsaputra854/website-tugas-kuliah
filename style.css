@@ -1,9 +1,110 @@
-body{
-    font-family: arial;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10;
+    padding: 0;
+    background-color: #f4f4f4;
 }
-a{
-    text-decoration: none;
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
-li{
+
+h1, h2 {
+    margin: 5px 0;
+}
+
+ul {
+    padding: 0;
     list-style: none;
 }
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    margin: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+button {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+}
+
+#before, #after {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+#step {
+    color: #333;
+}
+
+.calculator {
+    max-width: 400px;
+    margin: auto;
+}
+
+.calculator input {
+    width: 35%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+#title1{
+    display: block;
+}
+
+#title2{
+    display: block;
+}
+
+#num1{
+    margin: 10px;
+    width: 35%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+#num2{
+    margin: 10px;
+    width: 35%;
+    padding: 8px;
+    margin: 5px 0;
+}
+

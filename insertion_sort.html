@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Array</title>
+    <title>Insertion Sort</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body onload="arrayInfo2()">
+<body>
     <script src="script.js"></script>
     <header>
+        <nav>
             <ul>
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="array.html">Array</a></li>
@@ -17,19 +17,21 @@
                 <li><a href="kalkulator.html">Kalkulator</a></li>
                 <li><a href="hitluas.html">Menghitung Luas</a></li>
             </ul>
+        </nav>
     </header>
-    
+
     <main>
-        <section id="section-array">
-            <h2>1. Array</h2>
-            <p>Menambah data ke dalam array.</p>
-            <p id="arrayinfo"></p>
-            <label for="arrayInput">Masukkan data:</label>
-            <input type="number" id="arrayInput">
+        <section id="section-insertion">
+            <h2>4. Insertion Sort</h2>
+            <p>Insertion Sort berdasarkan array.</p>
+            <button onclick="insertionSort()">Urut</button>
+            <div>
+                <p id="before">Array sebelum di sort:</p>
+                <p id="after">Array sesudah di sort:</p>
+            </div>
             <br>
-            <button onclick="operasiarray()">Simpan ke dalam Array</button>
-            <button onclick="hapusArray()">Menghapus Array</button>
-            <p id="hasil">Hasil:</p>
+            <h4>Langkah-Langkah:</h4>
+            <p id="step"></p>
         </section>
     </main>
 </body>

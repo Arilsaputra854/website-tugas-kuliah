@@ -4,15 +4,36 @@
     <title>Binary Search</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-        <script src="script.js"></script>
-        <H1>BINARY SEARCH</H1>
-        <h3>Binary Search berdasarkan array yang sudah diurutkan</h3>
-        <br>
-        <label for="binary">Input angka yang ingin dicari</label>
-        <input type="text" id="inputCari">
-        <button id="btnCari" onclick="binarySearch()">Cari</button>
-        <p id="hasil">Hasil:</p>
-        <p id="array"></p>
-    </body>
+<body onload="arrayInfo()">
+    <script src="script.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="array.html">Array</a></li>
+                <li><a href="binary_search.html">Binary Search</a></li>
+                <li><a href="selection_sort.html">Selection Sort</a></li>
+                <li><a href="insertion_sort.html">Insertion Sort</a></li>
+                <li><a href="kalkulator.html">Kalkulator</a></li>
+                <li><a href="hitluas.html">Menghitung Luas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section-binary">
+            <h2>2. Binary Search</h2>
+            <p>Binary Search berdasarkan array yang sudah diurutkan.</p>
+            <p id="arrayinfo"></p>
+            <p id="array"></p>
+            <label for="inputCari">Input angka yang ingin dicari:</label>
+            <input type="text" id="inputCari">
+            <button id="btnCari" onclick="binarySearch()">Cari</button>
+            <p id="hasil" sc></p>
+            <br>
+            <h4>Langkah-Langkah:</h4>
+            <p id="step"></p>
+        </section>
+    </main>
+</body>
 </html>
